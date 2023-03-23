@@ -12,7 +12,7 @@ var name = ''
 mongoose.set('strictQuery', true);
 var id = '';
 var Uname = '';
-mongoose.connect("mongodb://127.0.0.1:27017/Foodie")
+mongoose.connect("mongodb+srv://Foodie:Iamphenomenol1@cluster0.fyf56n7.mongodb.net/?retryWrites=true&w=majority")
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -146,7 +146,6 @@ app.get('/AddRecipe', (req, res) => {
     res.render('Addrecipe')
 })
 app.get('/Recipe', (req, res) => {
-    
     res.render('Recipe', { RecipeArr: [] })
 })
 // app.get('/Recipe', (req, res) => {
