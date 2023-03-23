@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+/* container */
+.container {
+    font-family: cursive;
+    background-color: #F9F5EB;
+    margin-top: 25vh;
+    border: 2px solid black;
+    padding: 2rem;
+    width: fit-content;
+    border-radius: 1rem; 
+}
+/* container ended */
