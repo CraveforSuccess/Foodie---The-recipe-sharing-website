@@ -5,6 +5,18 @@ const ejs = require('ejs');
 const path = require('path');
 const md5 = require('md5')
 const app = express();
+// const multer = require('multer')
+
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         cb(null, 'uploads/');
+//     },
+//     filename: function (req, file, cb) {
+//         cb(null, Date.now() + path.extname(file.originalname));
+//     }
+// })
+
+// const upload = multer({storage:storage});
 
 var IngArr = []
 var process_Arr = []
